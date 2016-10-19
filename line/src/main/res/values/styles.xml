@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application them  e. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <!-- ActionBar 样式 -->
+    <style name="MyActionBar"
+           parent="android:Widget.Holo.ActionBar">
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+
+    <!-- ActionBar 标题文本 -->
+    <style name="MyActionBarTitleText"
+           parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/color_red</item>
+    </style>
+
+    <!-- ActionBar Tab标签 文本样式 -->
+    <!-- windowActionBarOverlay 是否启用叠加模式-->
+    <style name="MyActionBarTabText"
+           parent="android:Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">@color/color_red</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+</resources>

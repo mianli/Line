@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      android:installLocation="preferExternal"
+      package="com.study.line.line" >
+
+    <!-- 存储卡的读写权限-->
+    <!-- 如果我们的程序有声明WRITE_EXTERNAL_STORAGE 权限，那么就默认有了读的权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>-->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Line"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name="com.study.line.activity.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 用abstract的activity自然不能被实例化-->
+        <activity android:name="com.study.line.activity.BaseActivity"></activity>
+
+        <activity
+            android:name="com.study.line.list.actionbar.ActionBarActivity"
+            android:theme="@style/MyActionBarTabText"></activity>
+
+        <!-- 主活动中的一个子活动-->
+        <activity
+            android:name="com.study.line.list.actionbar.UpButtonActivity"
+            android:label="有向上按钮的Activity"
+            android:parentActivityName="com.study.line.list.actionbar.ActionBarActivity">
+        </activity>
+
+        <activity android:name="com.study.line.activity.WebActivity"></activity>
+        <activity android:name="com.study.line.list.fragment.LFragmentActivity"></activity>
+        <activity android:name="com.study.line.list.fragment.LFragmentXMLActivity"></activity>
+        <activity android:name="com.study.line.list.fragment.dynamic.LFragmentDynamicActivity"></activity>
+        <activity android:name="com.study.line.list.fragment.interactive.InteractiveActivity"></activity>
+
+        <activity android:name="com.study.line.list.storage.StorageActivity"></activity>
+        <activity android:name="com.study.line.list.storage.InterStorageActivityActivity"></activity>
+        <activity android:name="com.study.line.list.storage.database.DataBaseActivity"></activity>
+        <activity android:name="com.study.line.list.storage.ExternalStorageActivityActivity"></activity>
+
+        <activity android:name="com.study.line.list.intent.IntentActivity"></activity>
+        <activity android:name="com.study.line.list.intent.SendIntentActivity"></activity>
+    </application>
+
+</manifest>

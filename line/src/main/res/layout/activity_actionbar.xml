@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/actionbar"
+	android:layout_marginTop="?android:actionBarSize">
+	<!-- 不带前缀的 ?attr/actionBarSize
+		适用于包括Android 3.0 和更高的所有版本-->
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:id="@+id/search_item"
+		android:title="查找"
+		android:icon="@drawable/search"
+		android:showAsAction="ifRoom"></item>
+
+	<item android:id="@+id/start_next_activity"
+		  android:title="打开下一个"
+		  android:showAsAction="never" />
+
+	<item
+		android:id="@+id/hide_actionbar"
+		android:title="隐藏ActionBar"
+		android:showAsAction="never">
+	</item>
+
+</menu>
